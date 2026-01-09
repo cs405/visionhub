@@ -183,7 +183,7 @@
 如果文档没有解决您的问题：
 
 1. **查看常见问题**: [USER_GUIDE - FAQ](USER_GUIDE.md#12-常见问题)
-2. **提交Issue**: [GitHub Issues](https://github.com/your-repo/issues)
+2. **提交Issue**: [GitHub Issues](https://github.com/cs405/visionhub/issues)
 3. **查看示例**: [examples/](../examples/)
 
 ---

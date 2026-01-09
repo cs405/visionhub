@@ -396,7 +396,7 @@ visionhub/
 
 ## 📞 联系我们
 
-- **Issue**: [GitHub Issues](https://github.com/your-repo/visionhub/issues)
+- **Issue**: [GitHub Issues](https://github.com/cs405/visionhub/issues)
 - **文档**: [完整文档](docs/)
 - **示例**: [examples/](examples/)
 

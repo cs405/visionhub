@@ -1006,7 +1006,7 @@ python -m torch.distributed.launch --nproc_per_node=4 \
 ## 📞 获取帮助
 
 - **文档**: [https://visionhub.readthedocs.io](docs/)
-- **Issue**: [GitHub Issues](https://github.com/visionhub/visionhub/issues)
+- **Issue**: [GitHub Issues](https://github.com/cs405/visionhub/issues)
 - **示例**: [examples/](examples/)
 
 ---
