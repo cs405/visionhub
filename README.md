@@ -47,7 +47,7 @@
 
 ```bash
 # 从源码安装
-git clone https://github.com/JKDCPPZzz/visionhub.git
+git clone https://github.com/cs405/visionhub.git
 cd visionhub
 pip install -e .
 ```

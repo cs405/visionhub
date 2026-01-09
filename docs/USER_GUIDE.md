@@ -46,19 +46,6 @@ visionhub是一个**全功能的PyTorch图像分类工具包**，从visionhub完
 | **完整部署** | ONNX, TensorRT, 量化, HTTP服务 |
 | **YOLO支持** | 检测+分类/检索联合推理 |
 
-### 1.3 与visionhub对比
-
-| 功能 | visionhub | visionhub |
-|------|-----------|-------------|
-| 框架 | visionhubvisionhub | PyTorch |
-| Backbone | 100+ | 85+ (核心全覆盖) |
-| Loss函数 | 60+ | 50+ (主流全覆盖) |
-| YOLO集成 | ❌ | ✅ |
-| 部署工具 | ✅ | ✅ |
-| 完成度 | 100% | **90%** |
-
----
-
 ## 2. 安装指南
 
 ### 2.1 环境要求
@@ -76,7 +63,7 @@ CUDA >= 11.0 (推荐，用于GPU加速)
 pip install visionhub
 
 # 方式2: 从源码安装
-git clone https://github.com/visionhub/visionhub.git
+git clone https://github.com/cs405/visionhub.git
 cd visionhub
 pip install -e .
 
@@ -1000,16 +987,4 @@ python -m torch.distributed.launch --nproc_per_node=4 \
   --model resnet50 \
   --distributed
 ```
-
----
-
-## 📞 获取帮助
-
-- **文档**: [https://visionhub.readthedocs.io](docs/)
-- **Issue**: [GitHub Issues](https://github.com/cs405/visionhub/issues)
-- **示例**: [examples/](examples/)
-
----
-
-**✅ 文档完成！visionhub已准备就绪！** 🎉
 
