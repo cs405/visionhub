@@ -1,0 +1,88 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "visionhub"
+version = "1.0.0"
+description = "Professional Visual Intelligence Toolkit"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "JKDCPPZzz"}
+]
+keywords = [
+    "computer-vision",
+    "image-classification",
+    "image-retrieval",
+    "face-recognition",
+    "pytorch",
+    "deep-learning",
+    "yolo"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    "torch>=1.10.0",
+    "torchvision>=0.11.0",
+    "numpy>=1.19.0",
+    "Pillow>=8.0.0",
+    "scipy>=1.5.0",
+    "scikit-learn>=0.24.0",
+    "tqdm>=4.60.0",
+    "pyyaml>=5.4.0",
+    "opencv-python>=4.5.0",
+    "faiss-cpu>=1.7.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "black>=21.0",
+    "flake8>=3.9.0",
+]
+gpu = [
+    "faiss-gpu>=1.7.0",
+]
+onnx = [
+    "onnx>=1.10.0",
+    "onnxruntime>=1.10.0",
+    "onnx-simplifier>=0.3.0",
+]
+serving = [
+    "flask>=2.0.0",
+    "requests>=2.26.0",
+]
+all = [
+    "faiss-gpu>=1.7.0",
+    "onnx>=1.10.0",
+    "onnxruntime-gpu>=1.10.0",
+    "onnx-simplifier>=0.3.0",
+    "flask>=2.0.0",
+    "requests>=2.26.0",
+    "tensorrt",
+    "coremltools",
+]
+
+[project.urls]
+Homepage = "https://github.com/visionhub/visionhub"
+Documentation = "https://visionhub.readthedocs.io"
+Repository = "https://github.com/visionhub/visionhub"
+
+[tool.setuptools]
+packages = ["visionhub"]
+
+[tool.setuptools.package-data]
+visionhub = ["configs/**/*.yaml"]
+

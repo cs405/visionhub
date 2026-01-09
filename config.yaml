@@ -1,0 +1,10 @@
+IndexProcess:
+  device: cpu
+  dist_type: IP
+  embedding_size: 512
+  image_root: ./label_images/
+  index_dir: ./label_gallery/index
+  index_method: HNSW32
+  model_path: yolov12n.pt
+  return_k: 10
+  score_thres: 0.3

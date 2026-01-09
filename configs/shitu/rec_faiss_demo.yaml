@@ -1,0 +1,52 @@
+Arch:
+  Backbone:
+    class_num: 1000
+    name: ResNet18
+  Head:
+    bn_affine: true
+    embedding_size: 512
+    name: EmbeddingHead
+    with_l2norm: true
+    with_relu: false
+Global:
+  batch_size: 4
+  det_conf: 0.25
+  det_iou: 0.7
+  det_model_path: yolov12n.pt
+  device: cpu
+  infer_imgs: demo.jpg
+  rec_inference_model_dir: E:\yolo+向量检索\visionhub\output\training\exp_triplet\student_ep30.pth
+  rec_nms_thresold: 0.1
+  save_inference_dir: ./visionhub/output/inference
+IndexProcess:
+  batch_size: 8
+  data_file: ./label_gallery/gallery.txt
+  delimiter: "\t"
+  dist_type: IP
+  embedding_size: 512
+  image_root: ./label_images
+  index_dir: ./label_gallery/index
+  index_method: HNSW32
+  index_operation: new
+  return_k: 5
+  score_thres: 0.2
+RecPostProcess:
+  name: null
+RecPreProcess:
+  transform_ops:
+  - ResizeImage:
+      resize_short: 256
+  - CropImage:
+      size: 224
+  - NormalizeImage:
+      mean:
+      - 0.485
+      - 0.456
+      - 0.406
+      order: chw
+      scale: 1.0/255.0
+      std:
+      - 0.229
+      - 0.224
+      - 0.225
+  - ToTensor: null
