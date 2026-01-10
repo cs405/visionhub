@@ -3,7 +3,6 @@
 
 import os
 import json
-import torch
 import torch.distributed as dist
 
 
