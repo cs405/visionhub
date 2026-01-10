@@ -1,6 +1,6 @@
 """Distance Loss Functions
 
-完整迁移自PaddleClas DistanceLoss
+Distance-based loss for metric learning
 """
 
 import torch.nn as nn

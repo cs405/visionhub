@@ -1,7 +1,6 @@
 """PP-LCNetV2: Lightweight CPU Network V2
 
-完整迁移自PaddleClas PP-LCNetV2
-PaddlePaddle的第二代轻量级CPU网络
+Second generation lightweight network optimized for CPU devices
 """
 
 import torch

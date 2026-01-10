@@ -1,6 +1,6 @@
 """ResNet_VC: ResNet with Variant C improvements
 
-完整迁移ResNet变体C，包含更好的下采样策略
+ResNet Variant C with improved downsampling strategy
 """
 
 import torch

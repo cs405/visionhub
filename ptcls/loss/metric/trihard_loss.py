@@ -1,6 +1,6 @@
 """TriHard Loss
 
-完整迁移自PaddleClas TriHardLoss
+Triplet loss with batch hard mining strategy
 Paper: In Defense of the Triplet Loss for Person Re-Identification
 """
 

@@ -1,14 +1,14 @@
 """ptcls.pipeline.shitu.system_predictor
 
-Professional SystemPredictor，对齐 visionhub/deploy/python/predict_system.py：
-- 可选 det（当前先留空接口）
-- rec embedding
-- faiss search
-- 简单 NMS 去重
+Professional SystemPredictor for complete image search pipeline:
+- Optional detection module (interface ready)
+- Recognition embedding
+- Faiss search
+- Simple NMS deduplication
 
-注意：
-- 目前 det_predictor 还没迁移（visionhub 的 det 是 PP-YOLOE 等），这里先支持“无 det，整图检索”。
-- 后续你仓库里已有 YOLO/ultralytics，可以作为 det_predictor 的实现来源。
+Note:
+- Currently supports "no detector, full-image retrieval" mode.
+- YOLO/ultralytics integration available for detection capabilities.
 """
 
 from __future__ import annotations

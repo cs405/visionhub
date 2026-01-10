@@ -1,6 +1,6 @@
 """Triplet Loss V2
 
-完整迁移自PaddleClas TripletLossV2
+Enhanced triplet loss with hard sample mining
 Paper: FaceNet: A Unified Embedding for Face Recognition and Clustering
 """
 

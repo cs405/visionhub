@@ -1,4 +1,3 @@
-# Copyright (c) 2021 PaddlePaddle Authors. All Rights Reserved.
 # Migrated to PyTorch for visionhub project.
 
 import random

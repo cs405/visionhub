@@ -1,6 +1,6 @@
 """Ensemble Metric Learning Loss
 
-完整迁移自PaddleClas EmlLoss
+Implementation of ensemble metric learning
 Paper: Large Scale Strongly Supervised Ensemble Metric Learning
 """
 

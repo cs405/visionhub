@@ -1,4 +1,3 @@
-# Copyright (c) 2021 PaddlePaddle Authors. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -844,7 +843,7 @@ def augment_and_mix_transform(config_str, hparams):
 
 
 class RawTimmAutoAugment(object):
-    """TimmAutoAugment API for PaddleClas."""
+    """TimmAutoAugment API implementation."""
 
     def __init__(self,
                  config_str="rand-m9-mstd0.5-inc1",

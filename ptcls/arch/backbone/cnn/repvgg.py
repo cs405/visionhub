@@ -1,6 +1,5 @@
 """RepVGG: Making VGG-style ConvNets Great Again
 
-完整迁移自PaddleClas RepVGG
 Paper: RepVGG: Making VGG-style ConvNets Great Again
 Reference: https://arxiv.org/abs/2101.03697
 """

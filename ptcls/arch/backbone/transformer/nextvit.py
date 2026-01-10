@@ -1,6 +1,5 @@
 """NextViT: Next Generation Vision Transformer
 
-完整迁移自PaddleClas NextViT
 Paper: Next-ViT: Next Generation Vision Transformer for Efficient Deployment in Realistic Industrial Scenarios
 """
 

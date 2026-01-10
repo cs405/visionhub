@@ -1,17 +1,17 @@
 """ptcls.optimizer.learning_rate
 
-从 visionhub/ppcls/optimizer/learning_rate.py 的思想移植到 PyTorch：
-- 保持“name + 参数”的 YAML 形态
-- 支持按 iter 或按 epoch 更新（by_epoch）
-- 支持 warmup（线性 warmup）
+Learning rate scheduler implementation for PyTorch with flexible configuration:
+- YAML-based configuration support
+- Supports both iteration-based and epoch-based updates (by_epoch)
+- Built-in warmup support (linear warmup)
 
-实现策略：
-- 统一返回 torch.optim.lr_scheduler._LRScheduler 或等价对象
-- 同时返回一个 lightweight 的包装器，提供 step() 接口，并携带 by_epoch 信息
+Implementation strategy:
+- Returns torch.optim.lr_scheduler._LRScheduler or equivalent objects
+- Provides a lightweight wrapper with step() interface and by_epoch information
 
-注意：
-PyTorch 的 scheduler 更偏向 step() 被用户调用的位置决定“按 epoch 还是按 iter”。
-这里我们通过 wrapper + by_epoch 字段，让 Engine 可以按配置决定何时 step。
+Note:
+PyTorch schedulers are designed to have step() called by the user at appropriate positions.
+We provide a wrapper with by_epoch flag to let the Engine decide when to call step().
 """
 
 from __future__ import annotations

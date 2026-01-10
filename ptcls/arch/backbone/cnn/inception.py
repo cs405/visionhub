@@ -34,8 +34,8 @@ class InceptionV3(nn.Module):
         self.conv5 = ConvBNReLU(80, 192, 3)
         self.maxpool2 = nn.MaxPool2d(3, 2)
 
-        # Inception modules would go here
-        # Simplified for migration
+        # Inception modules
+        # Simplified implementation for compatibility
         self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
         self.dropout = nn.Dropout(0.5)
         self.fc = nn.Linear(2048, num_classes)

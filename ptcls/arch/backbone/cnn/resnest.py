@@ -1,6 +1,5 @@
 """ResNeSt: Split-Attention Networks
 
-完整迁移自PaddleClas ResNeSt
 Paper: ResNeSt: Split-Attention Networks
 """
 

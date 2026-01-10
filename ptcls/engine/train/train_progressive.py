@@ -1,6 +1,3 @@
-# Copyright (c) 2021 PaddlePaddle Authors. All Rights Reserved.
-# Migrated to PyTorch for visionhub project.
-
 from ...data import build_dataloader
 from .utils import type_name
 from .train import train_epoch

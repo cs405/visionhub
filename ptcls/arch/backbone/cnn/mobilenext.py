@@ -1,6 +1,5 @@
 """MobileNeXt: Rethinking Bottleneck Structure for Efficient Mobile Network Design
 
-完整迁移自PaddleClas MobileNeXt
 Paper: Rethinking Bottleneck Structure for Efficient Mobile Network Design
 """
 

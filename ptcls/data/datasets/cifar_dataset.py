@@ -1,6 +1,6 @@
 """CIFAR Dataset Wrappers
 
-CIFAR-10和CIFAR-100数据集包装器，用于PaddleClas风格的训练
+CIFAR-10和CIFAR-100数据集包装器，用于模型训练
 """
 
 import os

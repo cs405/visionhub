@@ -1,7 +1,6 @@
 """PP-HGNet: High Performance GPU Network
 
-完整迁移自PaddleClas PP-HGNet
-PaddlePaddle特色的高性能GPU网络
+Optimized high-performance network for GPU devices
 """
 
 import torch
@@ -108,7 +107,7 @@ class HGStage(nn.Module):
 
 
 class PPHGNet(nn.Module):
-    """PP-HGNet: PaddlePaddle High Performance GPU Network
+    """PP-HGNet: High Performance GPU Network
 
     Args:
         stem_channels: Stem通道配置

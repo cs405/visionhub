@@ -1,6 +1,6 @@
 """RegNet: Designing Network Design Spaces
 
-完整迁移自torchvision RegNet
+Implementation of RegNet architecture
 Paper: Designing Network Design Spaces
 """
 

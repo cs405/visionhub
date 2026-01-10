@@ -38,7 +38,7 @@ __all__ = [
     'SoftTripleLoss',
     'AngularLoss',
     'RankedListLoss',
-    # 新迁移的PaddleClas损失
+    # Advanced metric learning losses
     'EMLLossFull',
     'TriHardLoss',
     'SupConLossFull',

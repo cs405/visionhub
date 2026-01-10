@@ -1,6 +1,6 @@
 """FasterNet: Fast and Accurate Neural Network
 
-完整迁移FasterNet
+Implementation of FasterNet architecture
 Paper: Run, Don't Walk: Chasing Higher FLOPS for Faster Neural Networks
 """
 

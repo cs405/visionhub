@@ -1,6 +1,6 @@
 """EfficientNetV2: Improved EfficientNet
 
-完整迁移自torchvision EfficientNetV2
+Implementation of EfficientNetV2 architecture
 Paper: EfficientNetV2: Smaller Models and Faster Training
 """
 

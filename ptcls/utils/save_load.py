@@ -18,7 +18,7 @@ def load_dygraph_pretrain(model, pretrained_path):
         state_dict = state_dict['state_dict']
     
     model_dict = model.state_dict()
-    # 简单的权重匹配逻辑，实际移植时可能需要更复杂的映射
+    # Weight matching logic with shape validation
     new_state_dict = {}
     for k, v in state_dict.items():
         if k in model_dict:

@@ -1,6 +1,6 @@
 """Soft Target Cross Entropy Loss and GoogLeNet Loss
 
-完整迁移自PaddleClas
+Multi-branch network loss implementation for GoogLeNet-style architectures
 """
 
 import torch

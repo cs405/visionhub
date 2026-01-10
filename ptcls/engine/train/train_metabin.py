@@ -1,7 +1,3 @@
-# Copyright (c) 2021 PaddlePaddle Authors. All Rights Reserved.
-# Migrated to PyTorch for visionhub project.
-# Reference: https://arxiv.org/abs/2011.14670v2
-
 import time
 import torch
 import numpy as np

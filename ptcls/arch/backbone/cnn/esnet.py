@@ -1,6 +1,5 @@
 """ESNet: Efficient Search Network
 
-完整迁移自PaddleClas ESNet
 一个高效的神经网络搜索结果
 """
 

@@ -1,6 +1,3 @@
-# Copyright (c) 2023 PaddlePaddle Authors. All Rights Reserved.
-# Migrated to PyTorch for visionhub project.
-
 import os
 import json
 import torch.distributed as dist

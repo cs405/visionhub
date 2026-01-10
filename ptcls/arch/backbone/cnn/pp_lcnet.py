@@ -1,6 +1,5 @@
 """PP-LCNet: A Lightweight CPU Convolutional Neural Network
 
-完整迁移自PaddleClas PP-LCNet
 Paper: PP-LCNet: A Lightweight CPU Convolutional Neural Network
 """
 

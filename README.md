@@ -17,7 +17,7 @@
 
 ## 🎯 项目简介
 
-**visionhub** 是一个由 **JKDCPPZzz** 开发的全功能端到端视觉智能工具包，旨在为工业和研究提供高效、灵活的视觉解决方案。
+**visionhub** 是一个由 **JKDCPPZzz** 独立开发的全功能端到端视觉智能工具包，专为工业级应用和前沿研究设计，提供高性能、模块化的视觉解决方案。
 
 - ✅ **图像分类**：支持1000+类别的标准分类任务
 - ✅ **图像检索**：基于向量检索的高性能相似图片搜索
@@ -118,11 +118,8 @@ results = system.detect_and_classify('image.jpg', save_result=True)
 | 文档 | 描述 |
 |------|------|
 | [**完整使用指南**](docs/USER_GUIDE.md) | 所有功能的详细使用教程 |
-| [项目状态](docs/PROJECT_STATUS.md) | 移植进度和功能状态 |
-| [Backbone报告](docs/BACKBONE_MIGRATION_REPORT.md) | 85+个模型详细说明 |
-| [数据增强&Loss](docs/AUGMENTATION_LOSS_REPORT.md) | 16种增强+50+Loss详解 |
+| [数据增强&训练](docs/PRIORITY1_GUIDE.md) | 数据增强与训练技巧 |
 | [部署指南](docs/DEPLOYMENT_GUIDE.md) | ONNX/TensorRT部署完整教程 |
-| [分类指南](docs/CLASSIFICATION_GUIDE.md) | 标准分类任务教程 |
 
 ---
 
@@ -226,7 +223,7 @@ python deploy/http_server.py \
 - **Swin**: Swin-Tiny/Small/Base
 - **其他**: ConvNeXt, MobileViT, CSWin, LeViT, PVT-V2
 
-👉 [查看完整列表](docs/BACKBONE_MIGRATION_REPORT.md)
+👉 [查看完整模型列表](docs/USER_GUIDE.md#5-backbone模型库)
 
 ---
 
@@ -243,7 +240,7 @@ python deploy/http_server.py \
 ### 分类Loss（4个）
 - Focal, LabelSmoothing, Asymmetric
 
-👉 [查看完整列表](docs/AUGMENTATION_LOSS_REPORT.md)
+👉 [查看完整Loss列表](docs/USER_GUIDE.md#6-loss函数库)
 
 ---
 
@@ -387,10 +384,13 @@ visionhub/
 
 ## 🙏 致谢
 
-- **visionhub**: 原始项目来源
+感谢以下开源项目和框架的支持：
+
 - **PyTorch**: 深度学习框架
 - **Ultralytics**: YOLO实现
-- **Faiss**: 向量检索库
+- **Faiss**: 高性能向量检索库
+- **ONNX Runtime**: 跨平台推理引擎
+- **TensorRT**: NVIDIA推理加速引擎
 
 ---
 

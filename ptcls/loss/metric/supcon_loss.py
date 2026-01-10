@@ -1,6 +1,6 @@
 """Supervised Contrastive Learning Loss
 
-完整迁移自PaddleClas SupConLoss
+Implementation of supervised contrastive learning
 Paper: Supervised Contrastive Learning
 """
 

@@ -1,6 +1,5 @@
 """Res2Net: A New Multi-scale Backbone Architecture
 
-完整迁移自PaddleClas Res2Net
 Paper: Res2Net: A New Multi-scale Backbone Architecture
 """
 

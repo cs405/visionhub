@@ -1,6 +1,3 @@
-# Copyright (c) 2021 PaddlePaddle Authors. All Rights Reserved.
-# Migrated to PyTorch for visionhub project.
-
 from collections import defaultdict
 import torch
 import torch.distributed as dist

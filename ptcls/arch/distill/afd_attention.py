@@ -1,28 +1,30 @@
-#copyright (c) 2021 PaddlePaddle Authors. All Rights Reserve.
-#
-#Licensed under the Apache License, Version 2.0 (the "License");
-#you may not use this file except in compliance with the License.
-#You may obtain a copy of the License at
-#
-#    http://www.apache.org/licenses/LICENSE-2.0
-#
-#Unless required by applicable law or agreed to in writing, software
-#distributed under the License is distributed on an "AS IS" BASIS,
-#WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-#See the License for the specific language governing permissions and
-#limitations under the License.
+"""
+Attention Feature Distillation
 
-import paddle.nn as nn
-import paddle.nn.functional as F
-import paddle
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+"""
+
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
 import numpy as np
 
 
-class LinearBNReLU(nn.Layer):
+class LinearBNReLU(nn.Module):
     def __init__(self, nin, nout):
         super().__init__()
         self.linear = nn.Linear(nin, nout)
-        self.bn = nn.BatchNorm1D(nout)
+        self.bn = nn.BatchNorm1d(nout)
         self.relu = nn.ReLU()
 
     def forward(self, x, relu=True):
@@ -106,18 +108,18 @@ class LinearTransformStudent(nn.Layer):
         return {"bilinear_key": bilinear_key, "value": value}
 
 
-class Sample(nn.Layer):
+class Sample(nn.Module):
     def __init__(self, t_shape):
         super().__init__()
         self.t_N, self.t_C, self.t_H, self.t_W = t_shape
-        self.sample = nn.AdaptiveAvgPool2D((self.t_H, self.t_W))
+        self.sample = nn.AdaptiveAvgPool2d((self.t_H, self.t_W))
 
     def forward(self, g_s, bs):
-        g_s = paddle.stack(
+        g_s = torch.stack(
             [
                 self.sample(f_s.pow(2).mean(
                     1, keepdim=True)).reshape([bs, self.t_H * self.t_W])
                 for f_s in g_s
             ],
-            axis=1)
+            dim=1)
         return g_s

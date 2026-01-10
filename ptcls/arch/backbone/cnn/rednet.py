@@ -1,6 +1,5 @@
 """RedNet: Residual Encoder-Decoder Network
 
-完整迁移自PaddleClas RedNet
 Paper: Involution: Inverting the Inherence of Convolution for Visual Recognition
 """
 

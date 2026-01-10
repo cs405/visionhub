@@ -1,7 +1,6 @@
 """PP-HGNetV2: High Performance GPU Network V2
 
-完整迁移自PaddleClas PP-HGNetV2
-PaddlePaddle第二代高性能GPU网络
+Second generation high-performance network optimized for GPU devices
 """
 
 import torch

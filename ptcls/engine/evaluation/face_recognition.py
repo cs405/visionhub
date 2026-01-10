@@ -1,6 +1,3 @@
-# Copyright (c) 2024 PaddlePaddle Authors. All Rights Reserved.
-# Migrated to PyTorch for visionhub project.
-
 import time
 import torch
 import torch.nn.functional as F

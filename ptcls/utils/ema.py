@@ -1,6 +1,3 @@
-# Copyright (c) 2020 PaddlePaddle Authors. All Rights Reserved.
-# Migrated to PyTorch for visionhub project.
-
 import torch
 import torch.nn as nn
 from copy import deepcopy

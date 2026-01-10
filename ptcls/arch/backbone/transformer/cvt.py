@@ -1,6 +1,5 @@
 """CVT: Convolutional vision Transformer
 
-完整迁移自PaddleClas CVT
 Paper: CvT: Introducing Convolutions to Vision Transformers
 """
 

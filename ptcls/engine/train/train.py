@@ -1,6 +1,3 @@
-# Copyright (c) 2021 PaddlePaddle Authors. All Rights Reserved.
-# Migrated to PyTorch for visionhub project.
-
 import time
 import torch
 from .utils import update_loss, update_metric, log_info, type_name

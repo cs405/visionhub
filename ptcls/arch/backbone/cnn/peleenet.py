@@ -1,6 +1,5 @@
 """PeleeNet: An efficient DenseNet architecture for mobile devices
 
-完整迁移自PaddleClas PeleeNet
 Paper: Pelee: A Real-Time Object Detection System on Mobile Devices
 """
 

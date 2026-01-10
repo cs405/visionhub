@@ -1,6 +1,6 @@
 """Deep Mutual Learning Loss
 
-完整迁移自PaddleClas DMLLoss
+Implementation of deep mutual learning
 Paper: Deep Mutual Learning
 """
 

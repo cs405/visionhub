@@ -27,7 +27,7 @@
 
 ### 1.1 什么是visionhub？
 
-visionhub是一个**全功能的PyTorch图像分类工具包**，从visionhub完整迁移而来，支持：
+visionhub是一个**专业的PyTorch视觉智能工具包**，由JKDCPPZzz独立开发，支持：
 
 - ✅ **图像分类**：标准分类任务
 - ✅ **图像检索**：向量检索、相似度搜索
