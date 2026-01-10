@@ -4,6 +4,10 @@ All metric learning loss functions
 """
 
 from .metric_losses import *
+from .advanced_metric_loss import *
+from .eml_loss import EMLLoss as EMLLossFull
+from .trihard_loss import TriHardLoss
+from .supcon_loss import SupConLoss as SupConLossFull
 
 # Try to import from parent if available
 try:
@@ -14,6 +18,7 @@ except:
     CircleLoss = None
 
 __all__ = [
+    # metric_losses.py
     'ArcFaceLoss',
     'CosFaceLoss',
     'SphereFaceLoss',
@@ -24,6 +29,19 @@ __all__ = [
     'FocalLoss',
     'LabelSmoothingCrossEntropy',
     'SoftTargetCrossEntropy',
+    # advanced_metric_loss.py
+    'MSMLoss',
+    'MetaBinLoss',
+    'XBMLoss',
+    'PairwiseCosFaceLoss',
+    'EMLLoss',
+    'SoftTripleLoss',
+    'AngularLoss',
+    'RankedListLoss',
+    # 新迁移的PaddleClas损失
+    'EMLLossFull',
+    'TriHardLoss',
+    'SupConLossFull',
 ]
 
 if BatchHardTripletLoss:
